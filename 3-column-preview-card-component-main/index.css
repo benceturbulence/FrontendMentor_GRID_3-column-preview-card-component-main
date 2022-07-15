@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 900px;
+    width: 90%;
+    margin: 5rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.col {
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    gap: 2rem;
+    padding: 3rem;
+    line-height: 1.5rem;
+    color: white;
+}
+
+.sedan {
+    background-color: hsl(31, 77%, 52%) ;
+}
+
+.suv {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+}
+
+p {
+    max-width: 80%;
+}
+
+p, a {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 300;
+    font-size: .8rem;
+}
+
+h1 {
+    grid-row: span;
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display';
+    background-color: aqua;
+    align-self: baseline;
+}
+
+.col a {
+    align-self: end;
+    background-color: white;
+    text-decoration: none;
+    width: 50%;
+    padding: .4rem .5rem;
+    border-radius: 4rem;
+    text-align: center;
+    font-weight: 600;
+    border: 1px solid rgba(0,0,0,0);
+    margin-top: 30px;
+}
+
+.sedan a {
+    color: hsl(31, 77%, 52%) ;
+}
+
+.suv a {
+    color: hsl(184, 100%, 22%) ;
+}
+
+.luxury a {
+    color: hsl(179, 100%, 13%);
+}
+
+a:hover {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
